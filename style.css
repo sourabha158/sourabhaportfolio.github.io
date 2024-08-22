@@ -1,105 +1,51 @@
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-    }
-    body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    }
-    header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    }
-    .logo img {
-    max-width: 100px;
-    height: auto;
-    }
-    .header-content {
-    text-align: left;
-    }
-    nav {
-    background-color: #000000;
-   
-    }
-    .menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-    }
-    .menu li {
-    margin: 1rem;
-    position: relative;
-    }
-    .menu a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-    }
-    .menu a:hover {
-    color: #000000;
-    }
-    .submenu-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #444;
-    z-index: 1;
-    }
-    .submenu:hover .submenu-content {
-    display: block;
-    }
-
-    footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #000000;
-    color: #fff;
-    }
-    .cse img{
-        width: fit-content;
-    }
-    .social-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    }
-    @media screen and (max-width: 768px) {
-    header {
-    flex-direction: column;
-    }
-    .logo {
-    margin-bottom: 1rem;
-    }
-.department {
-    margin-bottom: 2rem;
-    }
-    .footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #fffbfb;
-    color: #fff;
-    }
-    .social-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    }
-    @media screen and (max-width: 768px) {
-    header {
-    flex-direction: column;
-    }
-    .logo {
-    margin-bottom: 1rem;
-    }
-    
-
-
-
-
+body, h1, h2, p {
+margin: 0;
+padding: 0;
+}
+/* Global Styles */
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+}
+header {
+background-color: #333;
+color: hsl(0, 21%, 93%);
+text-align: center;
+padding: 1rem;
+}
+main {
+padding: 2rem;
+}
+.profile {
+display: flex;
+align-items: center;tr>
+}
+.photo {
+flex: 1;
+padding: 0 2rem;
+}
+FRONT END WEB DEVELOPMENT CS1102-1 Lab Manual
+.photo img {
+max-width: 100%;
+height: auto;
+border-radius: 50%;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.bio {
+flex: 2;
+}
+footer {
+text-align: center;
+padding: 1rem 0;
+background-color: #333;
+color: #fff;
+}
+table,th,td{
+    border:1px solid;
+    margin:auto;
+}
+/* Media Queries */
+@media screen and (max-width: 768px) {
+.profile {
+flex-direction: column;
+}}
